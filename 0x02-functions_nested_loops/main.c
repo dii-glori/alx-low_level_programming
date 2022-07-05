@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code.
@@ -9,15 +10,8 @@ int main(void)
 {
 	int r;
 
-	r = print_sign(98);
-	_putchar(r + '0');
-	_putchar('\n');
-	r = print_sign(0);
-	_putchar(r + '0');
-	_putchar('\n');
-	r = print_sign(0xff);
-	_putchar(r + '0');
-	_putchar('\n');
+	r = _abs(-1);
+	printf("%d\n", r);
 
 	return (0);
 
