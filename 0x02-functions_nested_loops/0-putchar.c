@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character to stdout
- * @c: character to be used by _putchar
- *
+ * main - entry point
  * Return: On success 0
  */
-int _putchar(char c)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
