@@ -8,19 +8,23 @@
  */
 void print_array(int *a, int n)
 {
-	int length;
+	int i;
 
-	a = a[n];
-	length = sizeof(a) / sizeof(a[n]);
-
-	i = 1;
-	while (i <= length)
+	i = 0;
+	if (n <= 0)
 	{
-		if (i == length)
+		printf("\n");
+		return;
+	}
+	while (i < n)
+	{
+		if (i == n - 1)
 		{
-			printf("%d", a[n]);
+			printf("%d", a[i]);
 		}
-		printf("%d, ", a[n]);
+		else
+		printf("%d, ", a[i]);
 		i++;
 	}
+	printf("\n");
 }
