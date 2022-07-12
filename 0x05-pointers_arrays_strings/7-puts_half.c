@@ -18,12 +18,13 @@ void puts_half(char *str)
 	}
 
 	half_length = length_of_the_string / 2;
-	i = half_length;
 
 	if (length_of_the_string % 2 != 0)
 	{
 		half_length = (length_of_the_string - 1) / 2;
 	}
+
+	i = half_length;
 
 	while (i < length_of_the_string)
 	{
