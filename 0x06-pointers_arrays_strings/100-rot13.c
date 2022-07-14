@@ -20,6 +20,7 @@ char *rot13(char *s)
 			{
 				index = (j + 26) % 52;
 				s[i] = alpha[index];
+				break;
 			}
 		}
 	}
