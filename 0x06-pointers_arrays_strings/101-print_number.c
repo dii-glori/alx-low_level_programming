@@ -1,5 +1,7 @@
 #include "main.h"
 
+void print_helper(unsigned int n);
+
 /**
  * print_number - prints an integer
  * @n: a number
