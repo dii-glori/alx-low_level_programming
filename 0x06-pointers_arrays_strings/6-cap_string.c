@@ -23,13 +23,14 @@ char *cap_string(char *s)
 		{
 			if (s[i] == sep[j])
 			{
+				i++;
 				if (s[i] >= 'a' && s[i] <= 'z')
 					s[i] -= 32;
 				continue;
 			}
 		}
 		if (s[i] >= 'A' && s[i] <= 'Z')
-				s[i] += 32;
+			s[i] += 32;
 		else
 			continue;
 	}
