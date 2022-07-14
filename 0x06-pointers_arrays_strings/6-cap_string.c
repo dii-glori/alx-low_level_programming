@@ -29,10 +29,6 @@ char *cap_string(char *s)
 				continue;
 			}
 		}
-		if (s[i] >= 'A' && s[i] <= 'Z')
-			s[i] += 32;
-		else
-			continue;
 	}
 	return (s);
 }
