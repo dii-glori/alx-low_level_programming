@@ -5,6 +5,7 @@
  * @dest: destination
  * @src: source
  * @n: count
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -16,11 +17,9 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 		i++;
 	}
-	;
-	if (n > i)
+	for (; n > i; i++)
 	{
 		dest[i] = '\0';
-		i++;
 	}
 
 	return (dest);
