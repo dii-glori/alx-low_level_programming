@@ -23,7 +23,7 @@ char *cap_string(char *s)
 		{
 			if (s[i] == sep[j])
 			{
-				i++;
+				++i;
 				if (s[i] >= 'a' && s[i] <= 'z')
 					s[i] -= 32;
 				continue;
