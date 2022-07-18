@@ -1,12 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _memset - fills memory with a constant byte.
- * @s: memory space pointer
- * @b: constant byte
- * @n: number of bytes
+ * print_diagsums - prints the sum of the two diagonals of a square
+ * @size: the size of the array
+ * @a: the name of the array
  */
-char *_memset(char *s, char b, unsigned int n)
+void print_diagsums(int *a, int size)
 {
+	int i, row;
+	int firstDiagonalSum = 0;
+	int secondDiagonalSum = 0;
+	int total = size * size;
 
+	i = 0;
+	while (i < total)
+	{
+		row = i / size;
+		firstDiagonalSum += a[i + row];
+		secondDiagonalSum += a[i + size - row - 1];
+		i += size;
+	}
+	printf("%d, %d\n", firstDiagonalSum, secondDiagonalSum);
 }
