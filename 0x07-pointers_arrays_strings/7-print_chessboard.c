@@ -1,12 +1,23 @@
 #include "main.h"
 
 /**
- * _memset - fills memory with a constant byte.
- * @s: memory space pointer
- * @b: constant byte
- * @n: number of bytes
+ * print_chessboard - prints the chessboard.
+ * @a: the row of the array
  */
-char *_memset(char *s, char b, unsigned int n)
+void print_chessboard(char (*a)[8])
 {
+	int i, j;
 
+	i = 0;
+	while (i < 8)
+	{
+		j = 0;
+		while (j < 8)
+		{
+			_putchar(a[i][j]);
+			j++;
+		}
+		_putchar('\0');
+		i++;
+	}
 }
