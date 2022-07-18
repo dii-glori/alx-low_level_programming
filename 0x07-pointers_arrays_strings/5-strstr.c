@@ -1,12 +1,30 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _memset - fills memory with a constant byte.
- * @s: memory space pointer
- * @b: constant byte
- * @n: number of bytes
+ * _strstr - locates a substring.
+ * @haystack: string
+ * @needle: substring
+ * Return: a pointer to the beginning of the located substring,
+ * or NULL if the substring is not found.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strstr(char *haystack, char *needle)
 {
+	int i = 0, j = 0;
 
+	while (needle[s] != '\0')
+		s++;
+	while (*haystack)
+	{
+		for (i = 0; needle[i]; i++)
+		{
+			if (haystack[i] != needle[i])
+				break;
+		}
+		if (i != s)
+			haystack++;
+		else
+			return (haystack);
+	}
+	return (NULL);
 }
