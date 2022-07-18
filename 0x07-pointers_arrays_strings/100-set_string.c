@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * _memset - fills memory with a constant byte.
- * @s: memory space pointer
- * @b: constant byte
- * @n: number of bytes
+ * set_string - sets the value of a pointer to a char.
+ * @s: the pointer
+ * @to: new value
  */
-char *_memset(char *s, char b, unsigned int n)
+void set_string(char **s, char *to)
 {
-
+	*s = to;
 }
