@@ -29,6 +29,12 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
+/**
+ * is_number - checks if a string is a number
+ * @s: pointer to string
+ * Return: 1 if s is a number 0 otherwise
+ */
 int is_number(char *s)
 {
 	while (*s)
