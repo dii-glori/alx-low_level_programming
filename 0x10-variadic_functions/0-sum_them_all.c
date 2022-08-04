@@ -2,8 +2,8 @@
 
 /**
  * sum_them_all - function that returns the sum of all its parameters.
- * @n: sum of integers
- * Return: sum of all its parameters.
+ * @n: number of integers passed to the function
+ * Return: sum of all parameters.
  */
 int sum_them_all(const unsigned int n, ...)
 {
