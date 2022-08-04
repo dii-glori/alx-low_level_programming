@@ -1,5 +1,7 @@
 #include "variadic_functions.h"
 
+void print_str(char *s);
+
 /**
  * print_all - print all the args passed
  * @format: argument types
