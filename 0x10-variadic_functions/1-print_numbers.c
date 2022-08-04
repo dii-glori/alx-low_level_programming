@@ -8,12 +8,12 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	
+
 	unsigned int i;
 	unsigned int a = n - 1;
 
 	if (separator == NULL)
-		return;
+		separator = "";
 
 	va_start(ap, n);
 
